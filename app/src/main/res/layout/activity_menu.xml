@@ -4,29 +4,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
-
-    <EditText
-        android:id="@+id/usuario"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Usuario"
-        android:inputType="textPersonName" />
-
-    <EditText
-        android:id="@+id/contraseña"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Contraseña"
-        android:inputType="textPassword" />
+    tools:context=".menu">
 
     <Button
-        android:id="@+id/iniciar"
+        android:id="@+id/buttonTemp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="inicio"
-        android:text="Iniciar sesion" />
+        android:onClick="irTemp"
+        android:text="temperatura" />
 
+    <Button
+        android:id="@+id/buttonRec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="irRec"
+        android:text="recorrido" />
+
+    <Button
+        android:id="@+id/buttonSal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="exit"
+        android:text="salir" />
 </LinearLayout>
